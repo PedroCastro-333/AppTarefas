@@ -1,0 +1,13 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && yarn add) || (cd client && yarn install)",
+    "server": "nodemon ./server/server.js",
+    "client": "cd client && yarn start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
